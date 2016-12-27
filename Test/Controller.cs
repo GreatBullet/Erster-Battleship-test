@@ -11,6 +11,10 @@ namespace Test
         private ConsoleKeyInfo key;
         bool Running= true;
         int posx= 5, posy= 5;
+        public void Fail()
+        {
+            Console.WriteLine("Das ist nicht möglich.");// System.IndexOutOfRangeException 
+        }
     
         public void InputLoop()
         {
@@ -23,7 +27,7 @@ namespace Test
                     case ConsoleKey.LeftArrow:
                         if(posx==0)
                         {
-                            Console.WriteLine("dont do that");
+                            Fail();
                         }
                         else
                         {
@@ -37,7 +41,7 @@ namespace Test
                     case ConsoleKey.RightArrow:
                         if (posx == 9)
                         {
-                            Console.WriteLine("dont do that");
+                            Fail();
                         }
                         else
                         {
@@ -51,7 +55,7 @@ namespace Test
                     case ConsoleKey.UpArrow:
                         if (posy == 0)
                         {
-                            Console.WriteLine("dont do that");
+                            Fail();
                         }
                         else
                         {
@@ -65,7 +69,7 @@ namespace Test
                     case ConsoleKey.DownArrow:
                         if(posy==9)
                         {
-                            Console.WriteLine("dont do that");
+                            Fail();
                         }
                         else
                         {
