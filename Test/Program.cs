@@ -12,7 +12,6 @@ namespace Test
         {
             Controller c1 = new Controller();
             c1.InputLoop();
-            Console.ReadKey();
         }
     }
 }
